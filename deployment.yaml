@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: httpd
-        image: rachanayelmame8/jenkins:latest
+        image: adetunjibadmus398/jenkins:latest
         ports:
         - containerPort: 80
