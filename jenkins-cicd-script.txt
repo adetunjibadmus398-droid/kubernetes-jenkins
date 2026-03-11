@@ -2,5 +2,3 @@ docker build -t docker.io/adetunjibadmus398/jenkins .
 docker login -u adetunjibadmus398 -p $dockerpasswd
 docker push docker.io/adetunjibadmus398/jenkins
 docker rmi docker.io/adetunjibadmus398/jenkins
-ssh -o  StrictHostKeyChecking=no -i /var/lib/jenkins/test.pem root@<kube-master-ip> git clone "https://github.com/adetunjibadmus398-droid/kubernetes-with-jenkins"
-ssh -o  StrictHostKeyChecking=no -i /var/lib/jenkins/test.pem root@<kube-master-ip> kubectl apply -f kubernetes-with-jenkins
